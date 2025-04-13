@@ -1,0 +1,31 @@
+{
+  "locales": {
+    "en": {
+      "languageCode": "en",
+      "languageTag": "en-US",
+      "originalName": "English",
+      "charset": "utf-8",
+      "direction": "ltr",
+      "currencyUnit": "USD",
+      "currencySymbol": "$"
+    },
+    "de": {
+      "languageCode": "de",
+      "languageTag": "de-DE",
+      "originalName": "Deutsch",
+      "charset": "utf-8",
+      "direction": "ltr",
+      "currencyUnit": "EUR",
+      "currencySymbol": "€"
+    },
+    "tr": {
+      "languageCode": "tr",
+      "languageTag": "tr-TR",
+      "originalName": "Türkçe",
+      "charset": "utf-8",
+      "direction": "ltr",
+      "currencyUnit": "TRY",
+      "currencySymbol": "₺"
+    }
+  }
+}

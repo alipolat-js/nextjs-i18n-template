@@ -1,7 +1,8 @@
 export const i18n: I18nConfig = {
   defaultLocale: 'en',
   locales: ['en', 'de', 'tr'],
-  localePath: '@/resources/translations',
+  translationsPath: '@/resources/translations',
+  localesLocation: '@/resources/locales.json',
   cookieOptions: {
     name: 'lang',
     path: '/',
@@ -14,9 +15,9 @@ export const i18n: I18nConfig = {
   api: {
     headers: ['Accept-Language'],
   },
-  loader: {
+  hocLoader: {
     enabled: true,
-    uiPath: '/components/ui/i18n/loader.tsx',
+    uiComponentLocation: '/components/ui/i18n/loader.tsx',
   },
   cache: {
     enabled: true,

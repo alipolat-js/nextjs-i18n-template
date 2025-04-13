@@ -13,7 +13,7 @@ type ApiConfig = {
 
 type LoaderConfig = {
   enabled: boolean;
-  uiPath: string;
+  uiComponentLocation: string;
 };
 
 type CacheConfig = {
@@ -28,11 +28,12 @@ type DebugConfig = {
 type I18nConfig = {
   defaultLocale: string;
   locales: string[];
-  localePath: string;
+  translationsPath: string;
+  localesLocation: string;
   cookieOptions: CookieOptions;
   autoDetect: boolean;
   api: ApiConfig;
-  loader: LoaderConfig;
+  hocLoader: LoaderConfig;
   cache: CacheConfig;
   debug: DebugConfig;
 };
