@@ -1,18 +1,6 @@
-import { getCurrentLocale, LocaleDetails } from "@/utils/i18n/getCurrentLocale";
 import Image from "next/image";
 
 export default async function Home() {
-  // Example 1: Using await
-  const localeDetails = await getCurrentLocale() as LocaleDetails;
-  console.log('Locale details (await):', localeDetails);
-
-  // Example 2: Using onLoad callback
-  let callbackLocaleDetails: LocaleDetails | null = null;
-  await getCurrentLocale(undefined, (details) => {
-    callbackLocaleDetails = details;
-    console.log('Locale details (callback):', details);
-  });
-
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">

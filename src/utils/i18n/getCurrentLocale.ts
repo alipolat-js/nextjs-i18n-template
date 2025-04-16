@@ -4,16 +4,7 @@ import { detectLocalePreferenceFromHeader } from './detectLocalePreferenceFromHe
 import { detectLocalePreferenceFromCookie } from './detectLocalePreferenceFromCookie';
 import { NextRequest } from 'next/server';
 import locales from '@/resources/locales.json';
-
-export interface LocaleDetails {
-  languageCode: string;
-  languageTag: string;
-  originalName: string;
-  charset: string;
-  direction: string;
-  currencyUnit: string;
-  currencySymbol: string;
-}
+import { LocaleDetails } from '@/types/i18n';
 
 /**
  * Get locale details from locales.json
