@@ -3,17 +3,8 @@ import { cookies } from 'next/headers';
 import { detectLocalePreferenceFromHeader } from './detectLocalePreferenceFromHeader';
 import { detectLocalePreferenceFromCookie } from './detectLocalePreferenceFromCookie';
 import { NextRequest } from 'next/server';
-import locales from '@/resources/locales.json';
 import { LocaleDetails } from '@/types/i18n';
-
-/**
- * Get locale details from locales.json
- * @param locale The locale code
- * @returns LocaleDetails object
- */
-function getLocaleDetails(locale: string): LocaleDetails {
-  return locales.locales[locale as keyof typeof locales.locales];
-}
+import { getLocaleDetails } from './getLocaleDetails';
 
 /**
  * Get current locale from server-side using next/headers
