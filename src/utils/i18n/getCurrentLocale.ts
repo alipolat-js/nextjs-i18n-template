@@ -1,10 +1,10 @@
 import { i18n } from '@/i18n.config';
 import { cookies } from 'next/headers';
-import { detectLocalePreferenceFromHeader } from './detectLocalePreferenceFromHeader';
-import { detectLocalePreferenceFromCookie } from './detectLocalePreferenceFromCookie';
+import { detectLocalePreferenceFromHeader } from '@/utils/i18n/detectLocalePreferenceFromHeader';
+import { detectLocalePreferenceFromCookie } from '@/utils/i18n/detectLocalePreferenceFromCookie';
 import { NextRequest } from 'next/server';
 import { LocaleDetails } from '@/types/i18n';
-import { getLocaleDetails } from './getLocaleDetails';
+import { getLocaleDetails } from '@/utils/i18n/getLocaleDetails';
 
 /**
  * Get current locale from server-side using next/headers
