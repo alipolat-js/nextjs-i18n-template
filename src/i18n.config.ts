@@ -1,8 +1,6 @@
 export const i18n: I18nConfig = {
   defaultLocale: 'en',
   locales: ['en', 'de', 'tr'],
-  translationsPath: '@/resources/translations',
-  localesLocation: '@/resources/locales.json',
   cookieOptions: {
     name: 'lang',
     path: '/',

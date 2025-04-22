@@ -28,8 +28,6 @@ type DebugConfig = {
 type I18nConfig = {
   defaultLocale: string;
   locales: string[];
-  translationsPath: string;
-  localesLocation: string;
   cookieOptions: CookieOptions;
   autoDetect: boolean;
   api: ApiConfig;
